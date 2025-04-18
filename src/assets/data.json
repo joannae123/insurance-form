@@ -1,0 +1,198 @@
+{
+    "insuranceTypes": [
+      { "id": "liability_insurance", "name": "Liability Insurance" },
+      { "id": "collision_insurance", "name": "Collision Insurance" },
+      { "id": "comprehensive_insurance", "name": "Comprehensive Insurance" },
+      { "id": "personal_injury_protection", "name": "Personal Injury Protection" },
+      { "id": "medical_payments_coverage", "name": "Medical Payments Coverage" },
+      { "id": "gap_insurance", "name": "Gap Insurance" },
+      { "id": "roadside_assistance_insurance", "name": "Roadside Assistance Insurance" }
+    ],
+    "vehicles": [
+      {
+        "id": "1",
+        "name": "Car",
+        "brands": [
+          {
+            "id": "1-1",
+            "name": "Toyota",
+            "models": [
+              { "id": "1-1-1", "name": "Corolla" },
+              { "id": "1-1-2", "name": "Camry" },
+              { "id": "1-1-3", "name": "Prius" },
+              { "id": "1-1-4", "name": "Yaris" }
+            ]
+          },
+          {
+            "id": "1-2",
+            "name": "Honda",
+            "models": [
+              { "id": "1-2-1", "name": "Civic" },
+              { "id": "1-2-2", "name": "Accord" },
+              { "id": "1-2-3", "name": "Fit" },
+              { "id": "1-2-4", "name": "CR-V" }
+            ]
+          },
+          {
+            "id": "1-3",
+            "name": "Ford",
+            "models": [
+              { "id": "1-3-1", "name": "Focus" },
+              { "id": "1-3-2", "name": "Fusion" },
+              { "id": "1-3-3", "name": "Mustang" },
+              { "id": "1-3-4", "name": "Escape" }
+            ]
+          },
+          {
+            "id": "1-4",
+            "name": "Chevrolet",
+            "models": [
+              { "id": "1-4-1", "name": "Malibu" },
+              { "id": "1-4-2", "name": "Impala" },
+              { "id": "1-4-3", "name": "Cruze" },
+              { "id": "1-4-4", "name": "Equinox" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Motorcycle",
+        "brands": [
+          {
+            "id": "2-1",
+            "name": "Yamaha",
+            "models": [
+              { "id": "2-1-1", "name": "YZF-R3" },
+              { "id": "2-1-2", "name": "MT-07" },
+              { "id": "2-1-3", "name": "XSR700" },
+              { "id": "2-1-4", "name": "Bolt" }
+            ]
+          },
+          {
+            "id": "2-2",
+            "name": "Kawasaki",
+            "models": [
+              { "id": "2-2-1", "name": "Ninja 400" },
+              { "id": "2-2-2", "name": "Z650" },
+              { "id": "2-2-3", "name": "Versys-X 300" },
+              { "id": "2-2-4", "name": "Vulcan S" }
+            ]
+          },
+          {
+            "id": "2-3",
+            "name": "Honda",
+            "models": [
+              { "id": "2-3-1", "name": "CBR500R" },
+              { "id": "2-3-2", "name": "Rebel 500" },
+              { "id": "2-3-3", "name": "Africa Twin" },
+              { "id": "2-3-4", "name": "Gold Wing" }
+            ]
+          },
+          {
+            "id": "2-4",
+            "name": "Suzuki",
+            "models": [
+              { "id": "2-4-1", "name": "GSX-R600" },
+              { "id": "2-4-2", "name": "V-Strom 650" },
+              { "id": "2-4-3", "name": "Boulevard M109R" },
+              { "id": "2-4-4", "name": "DR-Z400SM" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Truck",
+        "brands": [
+          {
+            "id": "3-1",
+            "name": "Ford",
+            "models": [
+              { "id": "3-1-1", "name": "F-150" },
+              { "id": "3-1-2", "name": "Ranger" },
+              { "id": "3-1-3", "name": "Super Duty" },
+              { "id": "3-1-4", "name": "Maverick" }
+            ]
+          },
+          {
+            "id": "3-2",
+            "name": "Chevrolet",
+            "models": [
+              { "id": "3-2-1", "name": "Silverado" },
+              { "id": "3-2-2", "name": "Colorado" },
+              { "id": "3-2-3", "name": "Avalanche" },
+              { "id": "3-2-4", "name": "S-10" }
+            ]
+          },
+          {
+            "id": "3-3",
+            "name": "Ram",
+            "models": [
+              { "id": "3-3-1", "name": "1500" },
+              { "id": "3-3-2", "name": "2500" },
+              { "id": "3-3-3", "name": "3500" },
+              { "id": "3-3-4", "name": "Dakota" }
+            ]
+          },
+          {
+            "id": "3-4",
+            "name": "Toyota",
+            "models": [
+              { "id": "3-4-1", "name": "Tacoma" },
+              { "id": "3-4-2", "name": "Tundra" },
+              { "id": "3-4-3", "name": "Hilux" },
+              { "id": "3-4-4", "name": "Land Cruiser" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Bus",
+        "brands": [
+          {
+            "id": "4-1",
+            "name": "Mercedes-Benz",
+            "models": [
+              { "id": "4-1-1", "name": "Sprinter" },
+              { "id": "4-1-2", "name": "Citaro" },
+              { "id": "4-1-3", "name": "Tourismo" },
+              { "id": "4-1-4", "name": "Intouro" }
+            ]
+          },
+          {
+            "id": "4-2",
+            "name": "Volvo",
+            "models": [
+              { "id": "4-2-1", "name": "7900 Electric" },
+              { "id": "4-2-2", "name": "B8R" },
+              { "id": "4-2-3", "name": "B11R" },
+              { "id": "4-2-4", "name": "B5LH" }
+            ]
+          },
+          {
+            "id": "4-3",
+            "name": "Scania",
+            "models": [
+              { "id": "4-3-1", "name": "Citywide" },
+              { "id": "4-3-2", "name": "Interlink" },
+              { "id": "4-3-3", "name": "Touring" },
+              { "id": "4-3-4", "name": "OmniExpress" }
+            ]
+          },
+          {
+            "id": "4-4",
+            "name": "MAN",
+            "models": [
+              { "id": "4-4-1", "name": "City" },
+              { "id": "4-4-2", "name": "Coach" },
+              { "id": "4-4-3", "name": "Intercity" },
+              { "id": "4-4-4", "name": "Regio" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

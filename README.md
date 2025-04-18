@@ -1,6 +1,30 @@
 # InsuranceApp
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.2.
+This app allows users to input owner information, address details, insurance periods, and vehicle details. The form is built using Angular Reactive Forms and Angular Material for a clean and responsive UI.
+
+## Features
+
+- Owner Information: Capture the owner's first name, last name, email, and phone number.
+- Address Information: Capture street address, home number, postal code, city, and country.
+- Insurance Period: Input the start and end dates for insurance coverage.
+- Insurance Types: Choose insurance types from a list of available options.
+- Vehicles: Add multiple vehicles, specifying the type, brand, model, color, and production date.
+
+## Technologies Used
+
+- Angular 19 (Reactive Forms, Directives, Components)
+- Angular Material (UI components like form fields, buttons, checkboxes)
+- TypeScript
+- RxJS (for handling asynchronous API calls)
+- Mock API Service (to simulate API calls for fetching data)
+
+## Prerequisites
+
+Before running the application, ensure that you have the following installed:
+
+- Node.js (version 14.x or later)
+- npm (Node package manager)
 
 ## Development server
 

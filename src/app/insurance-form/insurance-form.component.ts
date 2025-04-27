@@ -111,14 +111,14 @@ onToggleInsuranceType(id: string, event: any) {
   }
 
   // Handler for selecting vehicle type
-  onVehicleTypeChange(vehicleId: string, index: number): void {
+  onVehicleTypeChange(index: number): void {
     const vehicleGroup = this.vehicleList.at(index);
     vehicleGroup?.get('brand')?.setValue('');
     vehicleGroup?.get('model')?.setValue('');
   }
 
   // Handler for selecting a brand
-  onBrandChange(brandId: string, index: number): void {
+  onBrandChange(index: number): void {
     const vehicleGroup = this.vehicleList.at(index);
     vehicleGroup?.get('model')?.setValue('');
   }

@@ -159,7 +159,7 @@
           <mat-card>
             <mat-form-field appearance="fill">
               <mat-label>Vehicle Type</mat-label>
-              <mat-select formControlName="type" (selectionChange)="onVehicleTypeChange($event.value, i)">
+              <mat-select formControlName="type" (selectionChange)="onVehicleTypeChange(i)">
                 @for (vehicle of vehicles; track vehicle) {
                   <mat-option [value]="vehicle.id">{{ vehicle.name }}</mat-option>
                 }
@@ -172,7 +172,7 @@
             </mat-form-field>
             <mat-form-field appearance="fill">
               <mat-label>Brand</mat-label>
-              <mat-select formControlName="brand" (selectionChange)="onBrandChange($event.value, i)">
+              <mat-select formControlName="brand" (selectionChange)="onBrandChange(i)">
                 @for (brand of getBrands(vehicle.get('type')?.value); track brand) {
                   <mat-option [value]="brand.id">{{ brand.name }}</mat-option>
                 }

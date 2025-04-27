@@ -54,7 +54,7 @@ export class InsuranceFormComponent implements OnInit {
   pastDateValidator(control: AbstractControl): ValidationErrors | null {
     const selectedDate = new Date(control.value);
     const today = new Date();
-    today.setHours(0, 0, 0, 0); // Ignore time for comparison
+    today.setHours(0, 0, 0, 0); 
   
     if (control.value && selectedDate < today) {
       return { pastDate: true };
@@ -67,22 +67,22 @@ export class InsuranceFormComponent implements OnInit {
     return this.insuranceForm.get('vehicleList') as FormArray;
   }
 
-  // Getter for the insuranceTypes FormArray
-  getInsuranceTypeControl(index: number) {
-    return this.insuranceForm.get('insuranceTypes') as FormArray;
-  }
+// Getter for the insuranceTypes FormArray
+get insuranceTypesFormArray(): FormArray {
+  return this.insuranceForm.get('insuranceTypes') as FormArray;
+}
 
-//Toggle insurance type selection
-  onToggleInsuranceType(id: string, event: any) {
-    const formArray = this.getInsuranceTypeControl(0);
-    if (event.checked) {
-      formArray.push(this.fb.control(id));
-    } else {
-      const index = formArray.controls.findIndex(x => x.value === id);
-      if (index !== -1) formArray.removeAt(index);
-    }
-  }
+// Toggle insurance type selection
+onToggleInsuranceType(id: string, event: any) {
+  const formArray = this.insuranceTypesFormArray;
 
+  if (event.checked) {
+    formArray.push(this.fb.control(id));
+  } else {
+    const index = formArray.controls.findIndex(x => x.value === id);
+    if (index !== -1) formArray.removeAt(index);
+  }
+}
   // Add vehicle dynamically
   addVehicle() {
     const group = this.fb.group({
